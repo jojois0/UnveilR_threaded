@@ -1,0 +1,1134 @@
+-- This file was generated with UnveilR testing version at discord.gg/threaded or discord.gg/aqfudJEEeE (hookOp is on).
+
+local fenv = getfenv()
+local var1 = (table and table.move);
+local var2 = (bit32 or bit32);
+local var3 = (bit32 and nil);
+local var4 = (var3 or function()--[[function ignored]]end);
+local var5 = (bit32 and nil);
+local var6 = (var5 or function()--[[function ignored]]end);
+local var7 = (bit32 and nil);
+local var8 = (var7 or function()--[[function ignored]]end);
+local var9 = (bit32 and nil);
+local var10 = (var9 or function()--[[function ignored]]end);
+local var11 = (bit32 and nil);
+local var12 = (var11 or function()--[[function ignored]]end);
+local var13 = (bit32 and nil);
+local var14 = (var13 or function()--[[function ignored]]end);
+local str_Math = "math";
+local str_Floor = "floor";
+local str_Visible = "Visible";
+local str_Destroy = "Destroy";
+local str_Parent = "Parent";
+local str_New = "new";
+local str_Wait = "Wait";
+local str_Instance = "Instance";
+local str_Name = "Name";
+local str_ResetOnSpawn = "ResetOnSpawn";
+local str_Size = "Size";
+local str_Position = "Position";
+local str_Active = "Active";
+local str_Font = "Font";
+local str_LoadingBarBG = "loadingBarBG";
+local str_Thickness = "Thickness";
+local str_Transparency = "Transparency";
+local str_Character = "Character";
+local str_WaitForChild = "WaitForChild";
+local str_Task = "task";
+local str_Wait_2 = "wait";
+local str_EquipTool = "EquipTool";
+local str_FireServer = "FireServer";
+local str_Create = "Create";
+local str_TweenInfo = "TweenInfo";
+local str_Spawn = "spawn";
+local str_Linear = "Linear";
+local str_Scale = "Scale";
+local str_Offset = "Offset";
+local str_End = "End";
+local str_Touch = "Touch";
+local str_Changed = "Changed";
+local str_Connect = "Connect";
+local str_InputBegan = "InputBegan";
+local str_Bit = "bit";
+local str_String = "string";
+local str_Char = "char";
+local str_Table = "table";
+local str_Concat = "concat";
+local str_Game = "game";
+local str_GetService = "GetService";
+local str_Color_3 = "Color";
+local str_GothamBold = "GothamBold";
+local str_Rotation = "Rotation";
+local str_Border = "Border";
+local str_MouseEnter = "MouseEnter";
+local str_MouseLeave = "MouseLeave";
+local Not_Bit32 = not bit32;
+local var66 = (Not_Bit32 and 6);
+if bit32 then -- ran, expr id 1, has no else.
+    local str_Players = "Players";
+    local str_RunService = "RunService";
+    local str_PlayerGui = "PlayerGui";
+    local str_ScreenGui = "ScreenGui";
+    local str_Frame = "Frame";
+    local str_TextButton = "TextButton";
+    local str_UIGradient = "UIGradient";
+    local str_TextLabel = "TextLabel";
+    local str_Humanoid = "Humanoid";
+    local str_Quantum_Cloner = "Quantum Cloner";
+    local str_Packages = "Packages";
+    local str_Net = "Net";
+    local Players = game:GetService(str_Players);
+    local ReplicatedStorage = game:GetService("ReplicatedStorage");
+    local TweenService = game:GetService("TweenService");
+    local RunService = game:GetService(str_RunService);
+    local UserInputService = game:GetService("UserInputService");
+    local LocalPlayer = Players.LocalPlayer;
+    local PlayerGui = LocalPlayer:WaitForChild(str_PlayerGui);
+    local FindFirstChild = PlayerGui.FindFirstChild;
+    local DesyncButton = PlayerGui:FindFirstChild("DesyncButton");
+    local Not_DesyncButton = not DesyncButton;
+    local var148 = (Not_DesyncButton and 159);
+    local DesyncButton_2 = PlayerGui.DesyncButton;
+    local Destroy = DesyncButton_2[str_Destroy];
+    local Destroy_2 = DesyncButton_2:Destroy();
+    local ScreenGui = Instance.new(str_ScreenGui);
+    ScreenGui[str_Name] = "DesyncButton";
+    ScreenGui[str_ResetOnSpawn] = false;
+    ScreenGui[str_Parent] = PlayerGui;
+    local Frame = Instance.new(str_Frame);
+    local New = UDim2[str_New];
+    local _call150 = New(0, 200, 0, 60);
+    Frame[str_Size] = _call150;
+    local New_2 = UDim2[str_New];
+    local _call151 = New_2(0, 10, 0, 10);
+    Frame[str_Position] = _call151;
+    local FromRGB = Color3.fromRGB;
+    local _call152 = FromRGB(30, 30, 40);
+    Frame.BackgroundColor3 = _call152;
+    Frame.BackgroundTransparency = 0.8;
+    Frame[str_Parent] = ScreenGui;
+    local UICorner = Instance.new("UICorner");
+    local New_3 = UDim[str_New];
+    local _call153 = New_3(0, 12);
+    UICorner.CornerRadius = _call153;
+    UICorner[str_Parent] = Frame;
+    local UIStroke = Instance.new("UIStroke");
+    UIStroke[str_Thickness] = 1;
+    local FromRGB_2 = Color3.fromRGB;
+    local _call154 = FromRGB_2(80, 120, 200);
+    UIStroke[str_Color_3] = _call154;
+    UIStroke[str_Transparency] = 0.5;
+    UIStroke[str_Parent] = Frame;
+    local TextButton = Instance.new(str_TextButton);
+    local New_4 = UDim2[str_New];
+    local _call155 = New_4(0, 180, 0, 40);
+    TextButton[str_Size] = _call155;
+    local New_5 = UDim2[str_New];
+    local _call156 = New_5(0.5, 0, 0.5, 0);
+    TextButton[str_Position] = _call156;
+    local New_6 = Vector2[str_New];
+    local _call157 = New_6(0.5, 0.5);
+    TextButton.AnchorPoint = _call157;
+    local FromRGB_3 = Color3.fromRGB;
+    local _call158 = FromRGB_3(80, 120, 200);
+    TextButton.BackgroundColor3 = _call158;
+    local FromRGB_4 = Color3.fromRGB;
+    local _call159 = FromRGB_4(255, 255, 255);
+    TextButton.TextColor3 = _call159;
+    local str_Text_3 = "Text";
+    TextButton[str_Text_3] = "عدم الضرب";
+    local Enum_Exists = (Enum == nil);
+    if Enum_Exists then -- didnt run, expr id 2, has no else.
+    end
+    local Font = Enum[str_Font];
+    local Font_Exists = (Font == nil);
+    if Font_Exists then -- didnt run, expr id 3, has no else.
+    end
+    local GothamBold = Font[str_GothamBold];
+    TextButton[str_Font] = GothamBold;
+    TextButton.TextSize = 12;
+    TextButton.AutoButtonColor = false;
+    TextButton[str_Parent] = Frame;
+    local UICorner_2 = Instance.new("UICorner");
+    local New_7 = UDim[str_New];
+    local _call161 = New_7(0, 8);
+    UICorner_2.CornerRadius = _call161;
+    UICorner_2[str_Parent] = TextButton;
+    local UIStroke_2 = Instance.new("UIStroke");
+    UIStroke_2[str_Thickness] = 2;
+    UIStroke_2[str_Transparency] = 0;
+    UIStroke_2[str_Parent] = TextButton;
+    local UIGradient = Instance.new(str_UIGradient);
+    UIGradient[str_Rotation] = 45;
+    UIGradient[str_Parent] = UIStroke_2;
+    local UIStroke_3 = Instance.new("UIStroke");
+    UIStroke_3[str_Thickness] = 2;
+    UIStroke_3[str_Transparency] = 0;
+    local Enum_Exists_2 = (Enum == nil);
+    if Enum_Exists_2 then -- didnt run, expr id 4, has no else.
+    end
+    local ApplyStrokeMode = Enum.ApplyStrokeMode;
+    local ApplyStrokeMode_Exists = (ApplyStrokeMode == nil);
+    if ApplyStrokeMode_Exists then -- didnt run, expr id 5, has no else.
+    end
+    local Border = ApplyStrokeMode[str_Border];
+    UIStroke_3.ApplyStrokeMode = Border;
+    UIStroke_3[str_Parent] = TextButton;
+    local UIGradient_2 = Instance.new(str_UIGradient);
+    UIGradient_2[str_Rotation] = 45;
+    UIGradient_2[str_Parent] = UIStroke_3;
+    local Spawned = task.spawn(function(ext_1_0, ext_2_0, ext_3_0, ext_4_0, ext_5_0, ...)
+        local var326 = ext_1_0[1];
+        if ScreenGui then -- ran, expr id 42, has no else.
+            local Parent = ScreenGui[str_Parent];
+            local Not_Parent = not Parent;
+            local var327 = (Not_Parent and 120);
+            local FromHSV = Color3.fromHSV;
+            local _call328 = FromHSV(0.001388888888888889, 0.8, 0.9);
+            local FromHSV_2 = Color3.fromHSV;
+            local _call329 = FromHSV_2(0.16805555555555557, 0.8, 0.9);
+            local FromHSV_3 = Color3.fromHSV;
+            local _call330 = FromHSV_3(0.3347222222222222, 0.8, 0.9);
+            local FromHSV_4 = Color3.fromHSV;
+            local _call331 = FromHSV_4(0.5013888888888889, 0.8, 0.9);
+            local New_21 = ColorSequence[str_New];
+            local New_22 = ColorSequenceKeypoint[str_New];
+            local _call332 = New_22(0, _call328);
+            local New_23 = ColorSequenceKeypoint[str_New];
+            local _call333 = New_23(1, _call329);
+            local var334 = select(1, _call333);
+            local _call335 = New_21({
+                _call332,
+                var334,
+            });
+            UIGradient[str_Color_3] = _call335;
+            local New_24 = ColorSequence[str_New];
+            local New_25 = ColorSequenceKeypoint[str_New];
+            local _call336 = New_25(0, _call330);
+            local New_26 = ColorSequenceKeypoint[str_New];
+            local _call337 = New_26(1, _call331);
+            local var338 = select(1, _call337);
+            local _call339 = New_24({
+                _call336,
+                var338,
+            });
+            UIGradient_2[str_Color_3] = _call339;
+            local Connection_Result;
+            Connection_Result = RunService.Heartbeat:Wait();
+            if ScreenGui then -- ran, expr id 43, has no else.
+                local Parent_2 = ScreenGui[str_Parent];
+                local Not_Parent_2 = not Parent_2;
+                local var340 = (Not_Parent_2 and 120);
+                local FromHSV_5 = Color3.fromHSV;
+                local _call341 = FromHSV_5(0.002777777777777778, 0.8, 0.9);
+                local FromHSV_6 = Color3.fromHSV;
+                local _call342 = FromHSV_6(0.16944444444444445, 0.8, 0.9);
+                local FromHSV_7 = Color3.fromHSV;
+                local _call343 = FromHSV_7(0.33611111111111114, 0.8, 0.9);
+                local FromHSV_8 = Color3.fromHSV;
+                local _call344 = FromHSV_8(0.5027777777777778, 0.8, 0.9);
+                local New_27 = ColorSequence[str_New];
+                local New_28 = ColorSequenceKeypoint[str_New];
+                local _call345 = New_28(0, _call341);
+                local New_29 = ColorSequenceKeypoint[str_New];
+                local _call346 = New_29(1, _call342);
+                local var347 = select(1, _call346);
+                local _call348 = New_27({
+                    _call345,
+                    var347,
+                });
+                UIGradient[str_Color_3] = _call348;
+                local New_30 = ColorSequence[str_New];
+                local New_31 = ColorSequenceKeypoint[str_New];
+                local _call349 = New_31(0, _call343);
+                local New_32 = ColorSequenceKeypoint[str_New];
+                local _call350 = New_32(1, _call344);
+                local var351 = select(1, _call350);
+                local _call352 = New_30({
+                    _call349,
+                    var351,
+                });
+                UIGradient_2[str_Color_3] = _call352;
+                local Connection_Result_2;
+                Connection_Result_2 = RunService.Heartbeat:wait();
+                if ScreenGui then -- ran, expr id 44, has no else.
+                    local Parent_3 = ScreenGui[str_Parent];
+                    local Not_Parent_3 = not Parent_3;
+                    local var353 = (Not_Parent_3 and 120);
+                    local FromHSV_9 = Color3.fromHSV;
+                    local _call354 = FromHSV_9(0.004166666666666667, 0.8, 0.9);
+                    local FromHSV_10 = Color3.fromHSV;
+                    local _call355 = FromHSV_10(0.17083333333333334, 0.8, 0.9);
+                    local FromHSV_11 = Color3.fromHSV;
+                    local _call356 = FromHSV_11(0.3375, 0.8, 0.9);
+                    local FromHSV_12 = Color3.fromHSV;
+                    local _call357 = FromHSV_12(0.5041666666666667, 0.8, 0.9);
+                    local New_33 = ColorSequence[str_New];
+                    local New_34 = ColorSequenceKeypoint[str_New];
+                    local _call358 = New_34(0, _call354);
+                    local New_35 = ColorSequenceKeypoint[str_New];
+                    local _call359 = New_35(1, _call355);
+                    local var360 = select(1, _call359);
+                    local _call361 = New_33({
+                        _call358,
+                        var360,
+                    });
+                    UIGradient[str_Color_3] = _call361;
+                    local New_36 = ColorSequence[str_New];
+                    local New_37 = ColorSequenceKeypoint[str_New];
+                    local _call362 = New_37(0, _call356);
+                    local New_38 = ColorSequenceKeypoint[str_New];
+                    local _call363 = New_38(1, _call357);
+                    local var364 = select(1, _call363);
+                    local _call365 = New_36({
+                        _call362,
+                        var364,
+                    });
+                    UIGradient_2[str_Color_3] = _call365;
+                    local Connection_Result_3;
+                    Connection_Result_3 = RunService.Heartbeat:wait();
+                    if ScreenGui then -- ran, expr id 45, has no else.
+                        local Parent_4 = ScreenGui[str_Parent];
+                        local Not_Parent_4 = not Parent_4;
+                        local var366 = (Not_Parent_4 and 120);
+                        local FromHSV_13 = Color3.fromHSV;
+                        local _call367 = FromHSV_13(0.005555555555555556, 0.8, 0.9);
+                        local FromHSV_14 = Color3.fromHSV;
+                        local _call368 = FromHSV_14(0.17222222222222222, 0.8, 0.9);
+                        local FromHSV_15 = Color3.fromHSV;
+                        local _call369 = FromHSV_15(0.3388888888888889, 0.8, 0.9);
+                        local FromHSV_16 = Color3.fromHSV;
+                        local _call370 = FromHSV_16(0.5055555555555555, 0.8, 0.9);
+                        local New_39 = ColorSequence[str_New];
+                        local New_40 = ColorSequenceKeypoint[str_New];
+                        local _call371 = New_40(0, _call367);
+                        local New_41 = ColorSequenceKeypoint[str_New];
+                        local _call372 = New_41(1, _call368);
+                        local var373 = select(1, _call372);
+                        local _call374 = New_39({
+                            _call371,
+                            var373,
+                        });
+                        UIGradient[str_Color_3] = _call374;
+                        local New_42 = ColorSequence[str_New];
+                        local New_43 = ColorSequenceKeypoint[str_New];
+                        local _call375 = New_43(0, _call369);
+                        local New_44 = ColorSequenceKeypoint[str_New];
+                        local _call376 = New_44(1, _call370);
+                        local var377 = select(1, _call376);
+                        local _call378 = New_42({
+                            _call375,
+                            var377,
+                        });
+                        UIGradient_2[str_Color_3] = _call378;
+                        local Connection_Result_4;
+                        Connection_Result_4 = RunService.Heartbeat:wait();
+                        if ScreenGui then -- ran, expr id 46, has no else.
+                            local Parent_5 = ScreenGui[str_Parent];
+                            local Not_Parent_5 = not Parent_5;
+                            local var379 = (Not_Parent_5 and 120);
+                            local FromHSV_17 = Color3.fromHSV;
+                            local _call380 = FromHSV_17(0.006944444444444444, 0.8, 0.9);
+                            local FromHSV_18 = Color3.fromHSV;
+                            local _call381 = FromHSV_18(0.1736111111111111, 0.8, 0.9);
+                            local FromHSV_19 = Color3.fromHSV;
+                            local _call382 = FromHSV_19(0.3402777777777778, 0.8, 0.9);
+                            local FromHSV_20 = Color3.fromHSV;
+                            local _call383 = FromHSV_20(0.5069444444444444, 0.8, 0.9);
+                            local New_45 = ColorSequence[str_New];
+                            local New_46 = ColorSequenceKeypoint[str_New];
+                            local _call384 = New_46(0, _call380);
+                            local New_47 = ColorSequenceKeypoint[str_New];
+                            local _call385 = New_47(1, _call381);
+                            local var386 = select(1, _call385);
+                            local _call387 = New_45({
+                                _call384,
+                                var386,
+                            });
+                            UIGradient[str_Color_3] = _call387;
+                            local New_48 = ColorSequence[str_New];
+                            local New_49 = ColorSequenceKeypoint[str_New];
+                            local _call388 = New_49(0, _call382);
+                            local New_50 = ColorSequenceKeypoint[str_New];
+                            local _call389 = New_50(1, _call383);
+                            local var390 = select(1, _call389);
+                            local _call391 = New_48({
+                                _call388,
+                                var390,
+                            });
+                            UIGradient_2[str_Color_3] = _call391;
+                            local Connection_Result_5;
+                            Connection_Result_5 = RunService.Heartbeat:wait();
+                            if ScreenGui then -- ran, expr id 47, has no else.
+                                local Parent_6 = ScreenGui[str_Parent];
+                                local Not_Parent_6 = not Parent_6;
+                                local var392 = (Not_Parent_6 and 120);
+                                local FromHSV_21 = Color3.fromHSV;
+                                local _call393 = FromHSV_21(0.008333333333333333, 0.8, 0.9);
+                                local FromHSV_22 = Color3.fromHSV;
+                                local _call394 = FromHSV_22(0.175, 0.8, 0.9);
+                                local FromHSV_23 = Color3.fromHSV;
+                                local _call395 = FromHSV_23(0.3416666666666667, 0.8, 0.9);
+                                local FromHSV_24 = Color3.fromHSV;
+                                local _call396 = FromHSV_24(0.5083333333333333, 0.8, 0.9);
+                                local New_51 = ColorSequence[str_New];
+                                local New_52 = ColorSequenceKeypoint[str_New];
+                                local _call397 = New_52(0, _call393);
+                                local New_53 = ColorSequenceKeypoint[str_New];
+                                local _call398 = New_53(1, _call394);
+                                local var399 = select(1, _call398);
+                                local _call400 = New_51({
+                                    _call397,
+                                    var399,
+                                });
+                                UIGradient[str_Color_3] = _call400;
+                                local New_54 = ColorSequence[str_New];
+                                local New_55 = ColorSequenceKeypoint[str_New];
+                                local _call401 = New_55(0, _call395);
+                                local New_56 = ColorSequenceKeypoint[str_New];
+                                local _call402 = New_56(1, _call396);
+                                local var403 = select(1, _call402);
+                                local _call404 = New_54({
+                                    _call401,
+                                    var403,
+                                });
+                                UIGradient_2[str_Color_3] = _call404;
+                                local Connection_Result_6;
+                                Connection_Result_6 = RunService.Heartbeat:wait();
+                                if ScreenGui then -- ran, expr id 48, has no else.
+                                    local Parent_7 = ScreenGui[str_Parent];
+                                    local Not_Parent_7 = not Parent_7;
+                                    local var405 = (Not_Parent_7 and 120);
+                                    local FromHSV_25 = Color3.fromHSV;
+                                    local _call406 = FromHSV_25(0.009722222222222222, 0.8, 0.9);
+                                    local FromHSV_26 = Color3.fromHSV;
+                                    local _call407 = FromHSV_26(0.1763888888888889, 0.8, 0.9);
+                                    local FromHSV_27 = Color3.fromHSV;
+                                    local _call408 = FromHSV_27(0.34305555555555556, 0.8, 0.9);
+                                    local FromHSV_28 = Color3.fromHSV;
+                                    local _call409 = FromHSV_28(0.5097222222222222, 0.8, 0.9);
+                                    local New_57 = ColorSequence[str_New];
+                                    local New_58 = ColorSequenceKeypoint[str_New];
+                                    local _call410 = New_58(0, _call406);
+                                    local New_59 = ColorSequenceKeypoint[str_New];
+                                    local _call411 = New_59(1, _call407);
+                                    local var412 = select(1, _call411);
+                                    local _call413 = New_57({
+                                        _call410,
+                                        var412,
+                                    });
+                                    UIGradient[str_Color_3] = _call413;
+                                    local New_60 = ColorSequence[str_New];
+                                    local New_61 = ColorSequenceKeypoint[str_New];
+                                    local _call414 = New_61(0, _call408);
+                                    local New_62 = ColorSequenceKeypoint[str_New];
+                                    local _call415 = New_62(1, _call409);
+                                    local var416 = select(1, _call415);
+                                    local _call417 = New_60({
+                                        _call414,
+                                        var416,
+                                    });
+                                    UIGradient_2[str_Color_3] = _call417;
+                                    local Connection_Result_7;
+                                    Connection_Result_7 = RunService.Heartbeat:wait();
+                                    if ScreenGui then -- ran, expr id 49, has no else.
+                                        local Parent_8 = ScreenGui[str_Parent];
+                                        local Not_Parent_8 = not Parent_8;
+                                        local var418 = (Not_Parent_8 and 120);
+                                        local FromHSV_29 = Color3.fromHSV;
+                                        local _call419 = FromHSV_29(0.011111111111111112, 0.8, 0.9);
+                                        local FromHSV_30 = Color3.fromHSV;
+                                        local _call420 = FromHSV_30(0.17777777777777778, 0.8, 0.9);
+                                        local FromHSV_31 = Color3.fromHSV;
+                                        local _call421 = FromHSV_31(0.34444444444444444, 0.8, 0.9);
+                                        local FromHSV_32 = Color3.fromHSV;
+                                        local _call422 = FromHSV_32(0.5111111111111111, 0.8, 0.9);
+                                        local New_63 = ColorSequence[str_New];
+                                        local New_64 = ColorSequenceKeypoint[str_New];
+                                        local _call423 = New_64(0, _call419);
+                                        local New_65 = ColorSequenceKeypoint[str_New];
+                                        local _call424 = New_65(1, _call420);
+                                        local var425 = select(1, _call424);
+                                        local _call426 = New_63({
+                                            _call423,
+                                            var425,
+                                        });
+                                        UIGradient[str_Color_3] = _call426;
+                                        local New_66 = ColorSequence[str_New];
+                                        local New_67 = ColorSequenceKeypoint[str_New];
+                                        local _call427 = New_67(0, _call421);
+                                        local New_68 = ColorSequenceKeypoint[str_New];
+                                        local _call428 = New_68(1, _call422);
+                                        local var429 = select(1, _call428);
+                                        local _call430 = New_66({
+                                            _call427,
+                                            var429,
+                                        });
+                                        UIGradient_2[str_Color_3] = _call430;
+                                        local Connection_Result_8;
+                                        Connection_Result_8 = RunService.Heartbeat:wait();
+                                        if ScreenGui then -- ran, expr id 50, has no else.
+                                            local Parent_9 = ScreenGui[str_Parent];
+                                            local Not_Parent_9 = not Parent_9;
+                                            local var431 = (Not_Parent_9 and 120);
+                                            local FromHSV_33 = Color3.fromHSV;
+                                            local _call432 = FromHSV_33(0.0125, 0.8, 0.9);
+                                            local FromHSV_34 = Color3.fromHSV;
+                                            local _call433 = FromHSV_34(0.17916666666666667, 0.8, 0.9);
+                                            local FromHSV_35 = Color3.fromHSV;
+                                            local _call434 = FromHSV_35(0.3458333333333333, 0.8, 0.9);
+                                            local FromHSV_36 = Color3.fromHSV;
+                                            local _call435 = FromHSV_36(0.5125, 0.8, 0.9);
+                                            local New_69 = ColorSequence[str_New];
+                                            local New_70 = ColorSequenceKeypoint[str_New];
+                                            local _call436 = New_70(0, _call432);
+                                            local New_71 = ColorSequenceKeypoint[str_New];
+                                            local _call437 = New_71(1, _call433);
+                                            local var438 = select(1, _call437);
+                                            local _call439 = New_69({
+                                                _call436,
+                                                var438,
+                                            });
+                                            UIGradient[str_Color_3] = _call439;
+                                            local New_72 = ColorSequence[str_New];
+                                            local New_73 = ColorSequenceKeypoint[str_New];
+                                            local _call440 = New_73(0, _call434);
+                                            local New_74 = ColorSequenceKeypoint[str_New];
+                                            local _call441 = New_74(1, _call435);
+                                            local var442 = select(1, _call441);
+                                            local _call443 = New_72({
+                                                _call440,
+                                                var442,
+                                            });
+                                            UIGradient_2[str_Color_3] = _call443;
+                                            local Connection_Result_9;
+                                            Connection_Result_9 = RunService.Heartbeat:wait();
+                                            if ScreenGui then -- ran, expr id 51, has no else.
+                                                local Parent_10 = ScreenGui[str_Parent];
+                                                local Not_Parent_10 = not Parent_10;
+                                                local var444 = (Not_Parent_10 and 120);
+                                                local FromHSV_37 = Color3.fromHSV;
+                                                local _call445 = FromHSV_37(0.013888888888888888, 0.8, 0.9);
+                                                local FromHSV_38 = Color3.fromHSV;
+                                                local _call446 = FromHSV_38(0.18055555555555555, 0.8, 0.9);
+                                                local FromHSV_39 = Color3.fromHSV;
+                                                local _call447 = FromHSV_39(0.3472222222222222, 0.8, 0.9);
+                                                local FromHSV_40 = Color3.fromHSV;
+                                                local _call448 = FromHSV_40(0.5138888888888888, 0.8, 0.9);
+                                                local New_75 = ColorSequence[str_New];
+                                                local New_76 = ColorSequenceKeypoint[str_New];
+                                                local _call449 = New_76(0, _call445);
+                                                local New_77 = ColorSequenceKeypoint[str_New];
+                                                local _call450 = New_77(1, _call446);
+                                                local var451 = select(1, _call450);
+                                                local _call452 = New_75({
+                                                    _call449,
+                                                    var451,
+                                                });
+                                                UIGradient[str_Color_3] = _call452;
+                                                local New_78 = ColorSequence[str_New];
+                                                local New_79 = ColorSequenceKeypoint[str_New];
+                                                local _call453 = New_79(0, _call447);
+                                                local New_80 = ColorSequenceKeypoint[str_New];
+                                                local _call454 = New_80(1, _call448);
+                                                local var455 = select(1, _call454);
+                                                local _call456 = New_78({
+                                                    _call453,
+                                                    var455,
+                                                });
+                                                UIGradient_2[str_Color_3] = _call456;
+                                                local Connection_Result_10;
+                                                Connection_Result_10 = RunService.Heartbeat:wait();
+                                                if ScreenGui then -- ran, expr id 52, has no else.
+                                                    local Parent_11 = ScreenGui[str_Parent];
+                                                    local Not_Parent_11 = not Parent_11;
+                                                    local var457 = (Not_Parent_11 and 120);
+                                                    local FromHSV_41 = Color3.fromHSV;
+                                                    local _call458 = FromHSV_41(0.015277777777777777, 0.8, 0.9);
+                                                    local FromHSV_42 = Color3.fromHSV;
+                                                    local _call459 = FromHSV_42(0.18194444444444444, 0.8, 0.9);
+                                                    local FromHSV_43 = Color3.fromHSV;
+                                                    local _call460 = FromHSV_43(0.3486111111111111, 0.8, 0.9);
+                                                    local FromHSV_44 = Color3.fromHSV;
+                                                    local _call461 = FromHSV_44(0.5152777777777777, 0.8, 0.9);
+                                                    local New_81 = ColorSequence[str_New];
+                                                    local New_82 = ColorSequenceKeypoint[str_New];
+                                                    local _call462 = New_82(0, _call458);
+                                                    local New_83 = ColorSequenceKeypoint[str_New];
+                                                    local _call463 = New_83(1, _call459);
+                                                    local var464 = select(1, _call463);
+                                                    local _call465 = New_81({
+                                                        _call462,
+                                                        var464,
+                                                    });
+                                                    UIGradient[str_Color_3] = _call465;
+                                                    local New_84 = ColorSequence[str_New];
+                                                    local New_85 = ColorSequenceKeypoint[str_New];
+                                                    local _call466 = New_85(0, _call460);
+                                                    local New_86 = ColorSequenceKeypoint[str_New];
+                                                    local _call467 = New_86(1, _call461);
+                                                    local var468 = select(1, _call467);
+                                                    local _call469 = New_84({
+                                                        _call466,
+                                                        var468,
+                                                    });
+                                                    UIGradient_2[str_Color_3] = _call469;
+                                                    local Connection_Result_11;
+                                                    Connection_Result_11 = RunService.Heartbeat:wait();
+                                                    if ScreenGui then -- ran, expr id 53, has no else.
+                                                        local Parent_12 = ScreenGui[str_Parent];
+                                                        local Not_Parent_12 = not Parent_12;
+                                                        local var470 = (Not_Parent_12 and 120);
+                                                        local FromHSV_45 = Color3.fromHSV;
+                                                        local _call471 = FromHSV_45(0.016666666666666666, 0.8, 0.9);
+                                                        local FromHSV_46 = Color3.fromHSV;
+                                                        local _call472 = FromHSV_46(0.18333333333333332, 0.8, 0.9);
+                                                        local FromHSV_47 = Color3.fromHSV;
+                                                        local _call473 = FromHSV_47(0.35, 0.8, 0.9);
+                                                        local FromHSV_48 = Color3.fromHSV;
+                                                        local _call474 = FromHSV_48(0.5166666666666667, 0.8, 0.9);
+                                                        local New_87 = ColorSequence[str_New];
+                                                        local New_88 = ColorSequenceKeypoint[str_New];
+                                                        local _call475 = New_88(0, _call471);
+                                                        local New_89 = ColorSequenceKeypoint[str_New];
+                                                        local _call476 = New_89(1, _call472);
+                                                        local var477 = select(1, _call476);
+                                                        local _call478 = New_87({
+                                                            _call475,
+                                                            var477,
+                                                        });
+                                                        UIGradient[str_Color_3] = _call478;
+                                                        local New_90 = ColorSequence[str_New];
+                                                        local New_91 = ColorSequenceKeypoint[str_New];
+                                                        local _call479 = New_91(0, _call473);
+                                                        local New_92 = ColorSequenceKeypoint[str_New];
+                                                        local _call480 = New_92(1, _call474);
+                                                        local var481 = select(1, _call480);
+                                                        local _call482 = New_90({
+                                                            _call479,
+                                                            var481,
+                                                        });
+                                                        UIGradient_2[str_Color_3] = _call482;
+                                                        local Connection_Result_12;
+                                                        Connection_Result_12 = RunService.Heartbeat:wait();
+                                                        if ScreenGui then -- ran, expr id 54, has no else.
+                                                            local Parent_13 = ScreenGui[str_Parent];
+                                                            local Not_Parent_13 = not Parent_13;
+                                                            local var483 = (Not_Parent_13 and 120);
+                                                            local FromHSV_49 = Color3.fromHSV;
+                                                            local _call484 = FromHSV_49(0.018055555555555554, 0.8, 0.9);
+                                                            local FromHSV_50 = Color3.fromHSV;
+                                                            local _call485 = FromHSV_50(0.18472222222222223, 0.8, 0.9);
+                                                            local FromHSV_51 = Color3.fromHSV;
+                                                            local _call486 = FromHSV_51(0.35138888888888886, 0.8, 0.9);
+                                                            local FromHSV_52 = Color3.fromHSV;
+                                                            local _call487 = FromHSV_52(0.5180555555555556, 0.8, 0.9);
+                                                            local New_93 = ColorSequence[str_New];
+                                                            local New_94 = ColorSequenceKeypoint[str_New];
+                                                            local _call488 = New_94(0, _call484);
+                                                            local New_95 = ColorSequenceKeypoint[str_New];
+                                                            local _call489 = New_95(1, _call485);
+                                                            local var490 = select(1, _call489);
+                                                            local _call491 = New_93({
+                                                                _call488,
+                                                                var490,
+                                                            });
+                                                            UIGradient[str_Color_3] = _call491;
+                                                            local New_96 = ColorSequence[str_New];
+                                                            local New_97 = ColorSequenceKeypoint[str_New];
+                                                            local _call492 = New_97(0, _call486);
+                                                            local New_98 = ColorSequenceKeypoint[str_New];
+                                                            local _call493 = New_98(1, _call487);
+                                                            local var494 = select(1, _call493);
+                                                            local _call495 = New_96({
+                                                                _call492,
+                                                                var494,
+                                                            });
+                                                            UIGradient_2[str_Color_3] = _call495;
+                                                            local Connection_Result_13;
+                                                            Connection_Result_13 = RunService.Heartbeat:wait();
+                                                            if ScreenGui then -- ran, expr id 55, has no else.
+                                                                local Parent_14 = ScreenGui[str_Parent];
+                                                                local Not_Parent_14 = not Parent_14;
+                                                                local var496 = (Not_Parent_14 and 120);
+                                                                local FromHSV_53 = Color3.fromHSV;
+                                                                local _call497 = FromHSV_53(0.019444444444444445, 0.8, 0.9);
+                                                                local FromHSV_54 = Color3.fromHSV;
+                                                                local _call498 = FromHSV_54(0.18611111111111112, 0.8, 0.9);
+                                                                local FromHSV_55 = Color3.fromHSV;
+                                                                local _call499 = FromHSV_55(0.3527777777777778, 0.8, 0.9);
+                                                                local FromHSV_56 = Color3.fromHSV;
+                                                                local _call500 = FromHSV_56(0.5194444444444445, 0.8, 0.9);
+                                                                local New_99 = ColorSequence[str_New];
+                                                                local New_100 = ColorSequenceKeypoint[str_New];
+                                                                local _call501 = New_100(0, _call497);
+                                                                local New_101 = ColorSequenceKeypoint[str_New];
+                                                                local _call502 = New_101(1, _call498);
+                                                                local var503 = select(1, _call502);
+                                                                local _call504 = New_99({
+                                                                    _call501,
+                                                                    var503,
+                                                                });
+                                                                UIGradient[str_Color_3] = _call504;
+                                                                local New_102 = ColorSequence[str_New];
+                                                                local New_103 = ColorSequenceKeypoint[str_New];
+                                                                local _call505 = New_103(0, _call499);
+                                                                local New_104 = ColorSequenceKeypoint[str_New];
+                                                                local _call506 = New_104(1, _call500);
+                                                                local var507 = select(1, _call506);
+                                                                local _call508 = New_102({
+                                                                    _call505,
+                                                                    var507,
+                                                                });
+                                                                UIGradient_2[str_Color_3] = _call508;
+                                                                local Connection_Result_14;
+                                                                Connection_Result_14 = RunService.Heartbeat:wait();
+                                                                if ScreenGui then -- ran, expr id 56, has no else.
+                                                                    local Parent_15 = ScreenGui[str_Parent];
+                                                                    local Not_Parent_15 = not Parent_15;
+                                                                    local var509 = (Not_Parent_15 and 120);
+                                                                    local FromHSV_57 = Color3.fromHSV;
+                                                                    local _call510 = FromHSV_57(0.020833333333333332, 0.8, 0.9);
+                                                                    local FromHSV_58 = Color3.fromHSV;
+                                                                    local _call511 = FromHSV_58(0.1875, 0.8, 0.9);
+                                                                    local FromHSV_59 = Color3.fromHSV;
+                                                                    local _call512 = FromHSV_59(0.3541666666666667, 0.8, 0.9);
+                                                                    local FromHSV_60 = Color3.fromHSV;
+                                                                    local _call513 = FromHSV_60(0.5208333333333334, 0.8, 0.9);
+                                                                    local New_105 = ColorSequence[str_New];
+                                                                    local New_106 = ColorSequenceKeypoint[str_New];
+                                                                    local _call514 = New_106(0, _call510);
+                                                                    local New_107 = ColorSequenceKeypoint[str_New];
+                                                                    local _call515 = New_107(1, _call511);
+                                                                    local var516 = select(1, _call515);
+                                                                    local _call517 = New_105({
+                                                                        _call514,
+                                                                        var516,
+                                                                    });
+                                                                    UIGradient[str_Color_3] = _call517;
+                                                                    local New_108 = ColorSequence[str_New];
+                                                                    local New_109 = ColorSequenceKeypoint[str_New];
+                                                                    local _call518 = New_109(0, _call512);
+                                                                    local New_110 = ColorSequenceKeypoint[str_New];
+                                                                    local _call519 = New_110(1, _call513);
+                                                                    local var520 = select(1, _call519);
+                                                                    local _call521 = New_108({
+                                                                        _call518,
+                                                                        var520,
+                                                                    });
+                                                                    UIGradient_2[str_Color_3] = _call521;
+                                                                    local Connection_Result_15;
+                                                                    Connection_Result_15 = RunService.Heartbeat:wait();
+                                                                    if ScreenGui then -- ran, expr id 57, has no else.
+                                                                        local Parent_16 = ScreenGui[str_Parent];
+                                                                        local Not_Parent_16 = not Parent_16;
+                                                                        local var522 = (Not_Parent_16 and 120);
+                                                                        local FromHSV_61 = Color3.fromHSV;
+                                                                        local _call523 = FromHSV_61(0.022222222222222223, 0.8, 0.9);
+                                                                        local FromHSV_62 = Color3.fromHSV;
+                                                                        local _call524 = FromHSV_62(0.18888888888888888, 0.8, 0.9);
+                                                                        local FromHSV_63 = Color3.fromHSV;
+                                                                        local _call525 = FromHSV_63(0.35555555555555557, 0.8, 0.9);
+                                                                        local FromHSV_64 = Color3.fromHSV;
+                                                                        local _call526 = FromHSV_64(0.5222222222222223, 0.8, 0.9);
+                                                                        local New_111 = ColorSequence[str_New];
+                                                                        local New_112 = ColorSequenceKeypoint[str_New];
+                                                                        local _call527 = New_112(0, _call523);
+                                                                        local New_113 = ColorSequenceKeypoint[str_New];
+                                                                        local _call528 = New_113(1, _call524);
+                                                                        local var529 = select(1, _call528);
+                                                                        local _call530 = New_111({
+                                                                            _call527,
+                                                                            var529,
+                                                                        });
+                                                                        UIGradient[str_Color_3] = _call530;
+                                                                        local New_114 = ColorSequence[str_New];
+                                                                        local New_115 = ColorSequenceKeypoint[str_New];
+                                                                        local _call531 = New_115(0, _call525);
+                                                                        local New_116 = ColorSequenceKeypoint[str_New];
+                                                                        local _call532 = New_116(1, _call526);
+                                                                        local var533 = select(1, _call532);
+                                                                        local _call534 = New_114({
+                                                                            _call531,
+                                                                            var533,
+                                                                        });
+                                                                        UIGradient_2[str_Color_3] = _call534;
+                                                                        local Connection_Result_16;
+                                                                        Connection_Result_16 = RunService.Heartbeat:wait();
+                                                                        if ScreenGui then -- ran, expr id 58, has no else.
+                                                                            local Parent_17 = ScreenGui[str_Parent];
+                                                                            local Not_Parent_17 = not Parent_17;
+                                                                            local var535 = (Not_Parent_17 and 120);
+                                                                            local FromHSV_65 = Color3.fromHSV;
+                                                                            local _call536 = FromHSV_65(0.02361111111111111, 0.8, 0.9);
+                                                                            local FromHSV_66 = Color3.fromHSV;
+                                                                            local _call537 = FromHSV_66(0.19027777777777777, 0.8, 0.9);
+                                                                            local FromHSV_67 = Color3.fromHSV;
+                                                                            local _call538 = FromHSV_67(0.35694444444444445, 0.8, 0.9);
+                                                                            local FromHSV_68 = Color3.fromHSV;
+                                                                            local _call539 = FromHSV_68(0.5236111111111111, 0.8, 0.9);
+                                                                            local New_117 = ColorSequence[str_New];
+                                                                            local New_118 = ColorSequenceKeypoint[str_New];
+                                                                            local _call540 = New_118(0, _call536);
+                                                                            local New_119 = ColorSequenceKeypoint[str_New];
+                                                                            local _call541 = New_119(1, _call537);
+                                                                            local var542 = select(1, _call541);
+                                                                            local _call543 = New_117({
+                                                                                _call540,
+                                                                                var542,
+                                                                            });
+                                                                            UIGradient[str_Color_3] = _call543;
+                                                                            local New_120 = ColorSequence[str_New];
+                                                                            local New_121 = ColorSequenceKeypoint[str_New];
+                                                                            local _call544 = New_121(0, _call538);
+                                                                            local New_122 = ColorSequenceKeypoint[str_New];
+                                                                            local _call545 = New_122(1, _call539);
+                                                                            local var546 = select(1, _call545);
+                                                                            local _call547 = New_120({
+                                                                                _call544,
+                                                                                var546,
+                                                                            });
+                                                                            UIGradient_2[str_Color_3] = _call547;
+                                                                            local Connection_Result_17;
+                                                                            Connection_Result_17 = RunService.Heartbeat:wait();
+                                                                            if ScreenGui then -- ran, expr id 59, has no else.
+                                                                                local Parent_18 = ScreenGui[str_Parent];
+                                                                                local Not_Parent_18 = not Parent_18;
+                                                                                local var548 = (Not_Parent_18 and 120);
+                                                                                local FromHSV_69 = Color3.fromHSV;
+                                                                                local _call549 = FromHSV_69(0.025, 0.8, 0.9);
+                                                                                local FromHSV_70 = Color3.fromHSV;
+                                                                                local _call550 = FromHSV_70(0.19166666666666668, 0.8, 0.9);
+                                                                                local FromHSV_71 = Color3.fromHSV;
+                                                                                local _call551 = FromHSV_71(0.35833333333333334, 0.8, 0.9);
+                                                                                local FromHSV_72 = Color3.fromHSV;
+                                                                                local _call552 = FromHSV_72(0.525, 0.8, 0.9);
+                                                                                local New_123 = ColorSequence[str_New];
+                                                                                local New_124 = ColorSequenceKeypoint[str_New];
+                                                                                local _call553 = New_124(0, _call549);
+                                                                                local New_125 = ColorSequenceKeypoint[str_New];
+                                                                                local _call554 = New_125(1, _call550);
+                                                                                local var555 = select(1, _call554);
+                                                                                local _call556 = New_123({
+                                                                                _call553,
+                                                                                var555,
+                                                                            });
+                                                                                UIGradient[str_Color_3] = _call556;
+                                                                                local New_126 = ColorSequence[str_New];
+                                                                                local New_127 = ColorSequenceKeypoint[str_New];
+                                                                                local _call557 = New_127(0, _call551);
+                                                                                local New_128 = ColorSequenceKeypoint[str_New];
+                                                                                local _call558 = New_128(1, _call552);
+                                                                                local var559 = select(1, _call558);
+                                                                                local _call560 = New_126({
+                                                                                _call557,
+                                                                                var559,
+                                                                            });
+                                                                                UIGradient_2[str_Color_3] = _call560;
+                                                                                local Connection_Result_18;
+                                                                                Connection_Result_18 = RunService.Heartbeat:wait();
+                                                                                if ScreenGui then -- ran, expr id 60, has no else.
+                                                                                local Parent_19 = ScreenGui[str_Parent];
+                                                                                local Not_Parent_19 = not Parent_19;
+                                                                                local var561 = (Not_Parent_19 and 120);
+                                                                                local FromHSV_73 = Color3.fromHSV;
+                                                                                local _call562 = FromHSV_73(0.02638888888888889, 0.8, 0.9);
+                                                                                local FromHSV_74 = Color3.fromHSV;
+                                                                                local _call563 = FromHSV_74(0.19305555555555556, 0.8, 0.9);
+                                                                                local FromHSV_75 = Color3.fromHSV;
+                                                                                local _call564 = FromHSV_75(0.3597222222222222, 0.8, 0.9);
+                                                                                local FromHSV_76 = Color3.fromHSV;
+                                                                                local _call565 = FromHSV_76(0.5263888888888889, 0.8, 0.9);
+                                                                                local New_129 = ColorSequence[str_New];
+                                                                                local New_130 = ColorSequenceKeypoint[str_New];
+                                                                                local _call566 = New_130(0, _call562);
+                                                                                local New_131 = ColorSequenceKeypoint[str_New];
+                                                                                local _call567 = New_131(1, _call563);
+                                                                                local var568 = select(1, _call567);
+                                                                                local _call569 = New_129({
+                                                                                _call566,
+                                                                                var568,
+                                                                            });
+                                                                                UIGradient[str_Color_3] = _call569;
+                                                                                local New_132 = ColorSequence[str_New];
+                                                                                local New_133 = ColorSequenceKeypoint[str_New];
+                                                                                local _call570 = New_133(0, _call564);
+                                                                                local New_134 = ColorSequenceKeypoint[str_New];
+                                                                                local _call571 = New_134(1, _call565);
+                                                                                local var572 = select(1, _call571);
+                                                                                local _call573 = New_132({
+                                                                                _call570,
+                                                                                var572,
+                                                                            });
+                                                                                UIGradient_2[str_Color_3] = _call573;
+                                                                                local Connection_Result_19;
+                                                                                Connection_Result_19 = RunService.Heartbeat:wait();
+                                                                                if ScreenGui then -- ran, expr id 61, has no else.
+                                                                                local Parent_20 = ScreenGui[str_Parent];
+                                                                                local Not_Parent_20 = not Parent_20;
+                                                                                local var574 = (Not_Parent_20 and 120);
+                                                                                local FromHSV_77 = Color3.fromHSV;
+                                                                                local _call575 = FromHSV_77(0.027777777777777776, 0.8, 0.9);
+                                                                                local FromHSV_78 = Color3.fromHSV;
+                                                                                local _call576 = FromHSV_78(0.19444444444444445, 0.8, 0.9);
+                                                                                local FromHSV_79 = Color3.fromHSV;
+                                                                                local _call577 = FromHSV_79(0.3611111111111111, 0.8, 0.9);
+                                                                                local FromHSV_80 = Color3.fromHSV;
+                                                                                local _call578 = FromHSV_80(0.5277777777777778, 0.8, 0.9);
+                                                                                local New_135 = ColorSequence[str_New];
+                                                                                local New_136 = ColorSequenceKeypoint[str_New];
+                                                                                local _call579 = New_136(0, _call575);
+                                                                                local New_137 = ColorSequenceKeypoint[str_New];
+                                                                                local _call580 = New_137(1, _call576);
+                                                                                local var581 = select(1, _call580);
+                                                                                local _call582 = New_135({
+                                                                                _call579,
+                                                                                var581,
+                                                                            });
+                                                                                UIGradient[str_Color_3] = _call582;
+                                                                                local New_138 = ColorSequence[str_New];
+                                                                                local New_139 = ColorSequenceKeypoint[str_New];
+                                                                                local _call583 = New_139(0, _call577);
+                                                                                local New_140 = ColorSequenceKeypoint[str_New];
+                                                                                error("[internal]:627: too many operations")
+                                                                                end
+                                                                                end
+                                                                            end
+                                                                        end
+                                                                    end
+                                                                end
+                                                            end
+                                                        end
+                                                    end
+                                                end
+                                            end
+                                        end
+                                    end
+                                end
+                            end
+                        end
+                    end
+                end
+            end
+        end
+        error("[internal]:1656: [internal]:627: too many operations")
+    end);
+    local Connection;
+    Connection = Frame[str_InputBegan]:Connect(function(...) -- args: Input;
+        local Input = ({...})[1];
+        local UserInputType = Input.UserInputType;
+        local Enum_Exists_4 = (Enum == nil);
+        if Enum_Exists_4 then -- didnt run, expr id 62, has no else.
+        end
+        local UserInputType_2 = Enum.UserInputType;
+        local UserInputType_2_Exists = (UserInputType_2 == nil);
+        if UserInputType_2_Exists then -- didnt run, expr id 63, has no else.
+        end
+        local MouseButton1 = UserInputType_2.MouseButton1;
+        local var584 = (UserInputType == MouseButton1);
+        local Not_Var584 = not var584;
+        local var585 = (Not_Var584 and 8);
+        local var586 = (var585 or 7);
+        local UserInputType_3 = Input.UserInputType;
+        local Enum_Exists_5 = (Enum == nil);
+        if Enum_Exists_5 then -- didnt run, expr id 64, has no else.
+        end
+        local UserInputType_4 = Enum.UserInputType;
+        local UserInputType_4_Exists = (UserInputType_4 == nil);
+        if UserInputType_4_Exists then -- didnt run, expr id 65, has no else.
+        end
+        local Touch = UserInputType_4[str_Touch];
+        local var587 = (UserInputType_3 == Touch);
+        local Not_Var587 = not var587;
+        local var588 = (Not_Var587 and 36);
+        local var589 = (var588 or 16);
+    end);
+    local Connection_2;
+    Connection_2 = Frame.InputChanged:Connect(function(...) -- args: Input_2;
+        local Input_2 = ({...})[1];
+        local UserInputType_5 = Input_2.UserInputType;
+        local Enum_Exists_6 = (Enum == nil);
+        if Enum_Exists_6 then -- didnt run, expr id 66, has no else.
+        end
+        local UserInputType_6 = Enum.UserInputType;
+        local UserInputType_6_Exists = (UserInputType_6 == nil);
+        if UserInputType_6_Exists then -- didnt run, expr id 67, has no else.
+        end
+        local MouseMovement = UserInputType_6.MouseMovement;
+        local var590 = (UserInputType_5 == MouseMovement);
+        local Not_Var590 = not var590;
+        local var591 = (Not_Var590 and 8);
+        local var592 = (var591 or 7);
+        local UserInputType_7 = Input_2.UserInputType;
+        local Enum_Exists_7 = (Enum == nil);
+        if Enum_Exists_7 then -- didnt run, expr id 68, has no else.
+        end
+        local UserInputType_8 = Enum.UserInputType;
+        local UserInputType_8_Exists = (UserInputType_8 == nil);
+        if UserInputType_8_Exists then -- didnt run, expr id 69, has no else.
+        end
+        local Touch_2 = UserInputType_8[str_Touch];
+        local var593 = (UserInputType_7 == Touch_2);
+        local Not_Var593 = not var593;
+        local var594 = (Not_Var593 and 19);
+        local var595 = (var594 or 16);
+    end);
+    local Connection_3;
+    Connection_3 = UserInputService.InputChanged:Connect(function(...) -- args: Input_3, GameProcessedEvent;
+        local Input_3 = ({...})[1];
+        local Input_3_Exists = (Input_3 == nil);
+        if Input_3_Exists then -- didnt run, expr id 70, has no else.
+        end
+        local Not_Input_3_Exists = not Input_3_Exists;
+        local var596 = (Not_Input_3_Exists and 13);
+        local var597 = (var596 or 8);
+    end);
+    local Connection_4;
+    Connection_4 = TextButton[str_MouseEnter]:Connect(function(...) -- args: X, Y;
+        local X = ({...})[1];
+        local TweenInfo = fenv[str_TweenInfo];
+        local New_141 = TweenInfo[str_New];
+        local _call598 = New_141(0.2);
+        local New_142 = UDim2[str_New];
+        local _call599 = New_142(0, 185, 0, 42);
+        local str = TweenService:Create(TextButton, _call598, {
+            BackgroundTransparency = 0.75,
+            [str_Size] = _call599,
+        });
+        local str_Play_3 = "Play";
+        local Play = str[str_Play_3];
+        local Play_2 = str:Play();
+    end);
+    local Connection_5;
+    Connection_5 = TextButton[str_MouseLeave]:Connect(function(...) -- args: X_2, Y_2;
+        local X_2 = ({...})[1];
+        local New_143 = TweenInfo[str_New];
+        local _call602 = New_143(0.2);
+        local New_144 = UDim2[str_New];
+        local _call603 = New_144(0, 180, 0, 40);
+        local str_2 = TweenService:Create(TextButton, _call602, {
+            BackgroundTransparency = 0,
+            [str_Size] = _call603,
+        });
+        local Play_3 = str_2[str_Play_3];
+        local Play_4 = str_2:Play();
+    end);
+    local Connection_6;
+    Connection_6 = TextButton.MouseButton1Click:Connect(function(...)
+        local var605 = ({...})[1];
+        local var606 = PlayerGui[1];
+        local Not_Var606 = not var606;
+        local var607 = (Not_Var606 and 4);
+    end);
+    local Connection_7;
+    Connection_7 = Players.PlayerRemoving:Connect(function(...) -- args: Player;
+        local Player = ({...})[1];
+        local var608 = (Player == LocalPlayer);
+        local Not_Var608 = not var608;
+        local var609 = (Not_Var608 and 14);
+        local var610 = (var609 or 4);
+    end);
+end
+local ScreenGui_2 = Instance.new(str_ScreenGui);
+ScreenGui_2[str_Name] = "LoadingScreenGui";
+ScreenGui_2[str_ResetOnSpawn] = false;
+ScreenGui_2.IgnoreGuiInset = true;
+ScreenGui_2[str_Parent] = PlayerGui;
+local Frame_2 = Instance.new(str_Frame);
+local New_8 = UDim2[str_New];
+local _call162 = New_8(1, 0, 1, 0);
+Frame_2[str_Size] = _call162;
+local New_9 = UDim2[str_New];
+local _call163 = New_9(0, 0, 0, 0);
+Frame_2[str_Position] = _call163;
+local New_10 = Vector2[str_New];
+local _call164 = New_10(0, 0);
+Frame_2.AnchorPoint = _call164;
+local FromRGB_5 = Color3.fromRGB;
+local _call165 = FromRGB_5(0, 0, 0);
+Frame_2.BackgroundColor3 = _call165;
+Frame_2.BackgroundTransparency = 0;
+Frame_2[str_Visible] = false;
+Frame_2.ZIndex = 100;
+Frame_2[str_Active] = false;
+Frame_2.Selectable = false;
+Frame_2[str_Parent] = ScreenGui_2;
+local TextLabel = Instance.new(str_TextLabel);
+local New_11 = UDim2[str_New];
+local _call166 = New_11(0, 400, 0, 60);
+TextLabel[str_Size] = _call166;
+local New_12 = UDim2[str_New];
+local _call167 = New_12(0.5, 0, 0.4, 0);
+TextLabel[str_Position] = _call167;
+local New_13 = Vector2[str_New];
+local _call168 = New_13(0.5, 0.5);
+TextLabel.AnchorPoint = _call168;
+TextLabel.BackgroundTransparency = 1;
+TextLabel[str_Text_3] = "اوزمو قاعد يخليك ما تنضرب";
+local FromRGB_6 = Color3.fromRGB;
+local _call169 = FromRGB_6(255, 255, 255);
+TextLabel.TextColor3 = _call169;
+local Enum_Exists_3 = (Enum == nil);
+if Enum_Exists_3 then -- didnt run, expr id 6, has no else.
+end
+local Font_2 = Enum[str_Font];
+local Font_2_Exists = (Font_2 == nil);
+if Font_2_Exists then -- didnt run, expr id 7, has no else.
+end
+local GothamBlack = Font_2.GothamBlack;
+TextLabel[str_Font] = GothamBlack;
+TextLabel.TextSize = 28;
+TextLabel.TextTransparency = 1;
+TextLabel.ZIndex = 101;
+TextLabel.TextStrokeTransparency = 0.7;
+local FromRGB_7 = Color3.fromRGB;
+local _call170 = FromRGB_7(0, 0, 0);
+TextLabel.TextStrokeColor3 = _call170;
+TextLabel[str_Parent] = Frame_2;
+local Frame_3 = Instance.new(str_Frame);
+fenv[str_LoadingBarBG] = Frame_3;
+local New_14 = UDim2[str_New];
+local _call171 = New_14(0, 400, 0, 25);
+Frame_3[str_Size] = _call171;
+local New_15 = UDim2[str_New];
+local _call172 = New_15(0.5, 0, 0.5, 0);
+Frame_3[str_Position] = _call172;
+local New_16 = Vector2[str_New];
+local _call173 = New_16(0.5, 0.5);
+Frame_3.AnchorPoint = _call173;
+local FromRGB_8 = Color3.fromRGB;
+local _call174 = FromRGB_8(40, 40, 50);
+Frame_3.BackgroundColor3 = _call174;
+Frame_3.BackgroundTransparency = 1;
+Frame_3.ZIndex = 101;
+Frame_3[str_Parent] = Frame_2;
+local UICorner_3 = Instance.new("UICorner");
+local New_17 = UDim[str_New];
+local _call175 = New_17(0, 12);
+UICorner_3.CornerRadius = _call175;
+UICorner_3[str_Parent] = Frame_3;
+local UIStroke_4 = Instance.new("UIStroke");
+UIStroke_4[str_Thickness] = 2;
+local FromRGB_9 = Color3.fromRGB;
+local _call176 = FromRGB_9(100, 100, 120);
+UIStroke_4[str_Color_3] = _call176;
+UIStroke_4[str_Transparency] = 1;
+UIStroke_4[str_Parent] = Frame_3;
+local Frame_4 = Instance.new(str_Frame);
+local New_18 = UDim2[str_New];
+local _call177 = New_18(0, 0, 1, 0);
+Frame_4[str_Size] = _call177;
+local New_19 = UDim2[str_New];
+local _call178 = New_19(0, 0, 0, 0);
+Frame_4[str_Position] = _call178;
+local FromRGB_10 = Color3.fromRGB;
+local _call179 = FromRGB_10(80, 120, 200);
+Frame_4.BackgroundColor3 = _call179;
+Frame_4.BackgroundTransparency = 1;
+Frame_4.ZIndex = 102;
+Frame_4[str_Parent] = Frame_3;
+local UICorner_4 = Instance.new("UICorner");
+local New_20 = UDim[str_New];
+local _call180 = New_20(0, 12);
+UICorner_4.CornerRadius = _call180;
+UICorner_4[str_Parent] = Frame_4;
